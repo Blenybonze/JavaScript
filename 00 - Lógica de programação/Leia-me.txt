@@ -1,2 +1,0 @@
-Estarei upando os Arquivos em .JS
-Quando você for aplicar, crie um exemplo base de HTML para implementar o script no body do seu código
