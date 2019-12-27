@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="bleny bonze">
+        <title>Resolução</title>
+    </head>
+    <body>
+        <h1>Lógica de programação com Javascript - Resolução</h1>
+        
+        <input type="text" id="txtNome" value="digite">
+        
+        
+        <script>
+            
+            var $txt = document.querySelector('txtNome');//Armazenando referência do objeto numa variável
+            
+            var nome = "Bleny ";
+            var sobreNome = "Bonze";
+            
+            
+            
+            document.querySelector('#txtNome').disabled = true; //Desabilitando a colocação de texto no campo do input type text
+            document.querySelector('#txtNome').value = nome + sobreNome; //.value serve tanto para recuperar um valor quanto para inserir valores
+            
+            
+            
+            
+            //Exemplos de .value
+            //Define um novo valor para o ID
+            //document.querySelector('#nome').value = "Bleny"
+            
+            //Recuperando valores - armazenando o valor em uma variável em JS
+            //var valor = document.querySelector('#nome').value;
+            
+            
+            
+            
+            //exemplos de textContent
+            //insere um texto na div
+            //document.querySelector('#msg').textContent = "Bleny"
+            
+            //recupera o texto da div com o id #msg(Apenas o texto dentro dela(STRING))
+            //var str = document.querySelector('#msg').textContent;
+            
+            
+            
+            
+        </script>
+        
+    </body>
+</html>

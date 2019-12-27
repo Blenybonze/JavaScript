@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="bleny bonze">
+        <title>Resolução</title>
+    </head>
+    <body>
+        <h1>Lógica de programação com Javascript - Resolução </h1>
+        
+        <div id="msg"></div>
+        
+        
+        <script>
+            
+            (function(){
+                var nome = prompt('Qual seu nome?');
+                document.querySelector('#msg').innerHTML = 'bem vindo, <b>'+nome+'</b>'; //A diferença entre o innerHTML e o textContent é que o innerHTML pode aplicar as tags HTML dentro do JS, por exemplo a tag para negrito <b></b>
+                
+                //document.getElementById('msg'); forma alternativa de chamar o ID
+                
+                
+            })()
+            
+            
+        </script>
+        
+    </body>
+</html>

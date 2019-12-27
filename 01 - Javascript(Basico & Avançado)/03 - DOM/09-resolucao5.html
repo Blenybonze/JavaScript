@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="bleny bonze">
+        <title>Javascript</title>
+        
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        
+        <!-- Meta tag responsiva-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        
+    </head>
+    <body>
+        
+        <section class="container">
+            <p>Nada demais aqui</p>
+            <p>Absolutamente nada</p>
+            <p>Valeu?</p>
+            <form class="container">
+                <textarea disabled></textarea>
+                <button >Enviar</button>
+            </form>
+        </section>
+        
+        <p>auhsausasusa</p>
+        
+        
+        <script>
+            
+            //Para coletar ou alterar o valor de uma coleção de objetos, precisaremos fazer um loop, inicialmente.
+            
+            (function(){
+                'use strict';
+                
+                //selecionando todos os paragrafos e coletando para a variavel paragrafos
+                var paragrafos = document.querySelectorAll('p');
+                
+                //variavel para controle de loop
+                var x = 0;
+                
+                //Loop para mudarmos os paragrafos do html
+                //Enquanto existir índice dentro da var paragrafos o loop repetirá
+                while(paragrafos[x]){
+                    
+                    //var paragrafos em sua indice mudará o text content para '...'
+                    paragrafos[x].textContent = x+' - Essa página foi hackeada por Fulano';
+                    
+                    //Incremento
+                    x++;
+                }
+            })()
+            
+            
+        </script>
+        
+    </body>
+</html>

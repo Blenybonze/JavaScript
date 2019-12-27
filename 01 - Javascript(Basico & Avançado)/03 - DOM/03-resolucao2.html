@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="bleny bonze">
+        <title>Resolução</title>
+    </head>
+    <body>
+        <h1>Lógica de programação com Javascript - Resolução </h1>
+        
+        
+        <input type="text" id="txtNome">
+        <button onclick="escreve()">Só clicar</button>
+            
+        
+        <div id="msg"></div>
+        
+        
+        <script>
+            var msg = 'nada'
+            var txtNome2 = document.querySelector('#txtNome');//Criando uma variável de referência para o ID
+                
+            function escreve(){ //Criando uma função atrelada ao button, que após clicar, realizará ações;
+                var nome = txtNome2.value; //Ordenando var nome receber o valor digitado dentro do input o que for digitado no ID
+                document.querySelector('#msg').innerHTML = 'Bem vindo(a), <b>'+nome+'</b>'; //Dando boas vindas a variável nome
+            }
+
+        </script>
+        
+    </body>
+</html>
