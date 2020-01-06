@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title> Código exemplo </title>
+		<meta charset="utf-8">
+	</head>
+
+	<body>
+		<div class="container">
+			<button id="btn1" onclick="clicar()"> Botão 1 </button>
+			<button id="btn1"> Botão 2 </button>
+			<button id="btn1" onclick="alert('onclick no atributo')"> Botão 3 </button>
+		</div>
+
+
+		<script>
+			var btn2 = document.getElementById('btn2');
+			var btn3 = document.getElementById('btn3');
+			
+			btn2.onclick = clicar;
+
+			function clicar(){
+				alert('clicou');
+				return function(){
+					alert('clicou2');
+				}
+			}
+
+
+			btn3.addEventListener("click", function(){
+				alert('clicou com dom level 2');
+			});
+
+			btn3.addEventListener("click", function(){
+				alert('clicou com dom level 2 com outro evento');
+			});
+
+			btn.onclick = function(){
+				alert('ola');
+			}
+			btn3.onclick = function(){
+				alert('mundo');
+			}
+
+		</script>
+
+	</body>
