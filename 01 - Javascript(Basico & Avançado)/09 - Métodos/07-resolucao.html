@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="bleny bonze">
+        <title>Javascript</title>
+        
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap-theme.css" rel="stylesheet">
+        
+        <script src="beluga.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Resolução do Exercício</h1>
+        </div>
+
+
+        <section>
+            <div class="container">
+
+                <h2>Média dos alunos</h2>
+                <table class="table js-tabela">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Nota 1</th>
+                            <th>Nota 2</th>
+                            <th>Nota 3</th>
+                            <th>Nota 4</th>
+                            <th>Média</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="aluno">
+                            <td class="aluno-nome">Gertrude</td>
+                            <td class="aluno-n1">10</td>
+                            <td class="aluno-n2">8.5</td>
+                            <td class="aluno-n3">9</td>
+                            <td class="aluno-n4">7.5</td>
+                            <td class="aluno-m"></td>
+                        </tr>
+
+                        <tr class="aluno">
+                            <td class="aluno-nome">Rey</td>
+                            <td class="aluno-n1">5</td>
+                            <td class="aluno-n2">8.5</td>
+                            <td class="aluno-n3">6.5</td>
+                            <td class="aluno-n4">7.5</td>
+                            <td class="aluno-m"></td>
+                        </tr>
+
+                        <tr class="aluno">
+                            <td class="aluno-nome">Jessilda</td>
+                            <td class="aluno-n1">8</td>
+                            <td class="aluno-n2">8.5</td>
+                            <td class="aluno-n3">7</td>
+                            <td class="aluno-n4">7.5</td>
+                            <td class="aluno-m"></td>
+                        </tr>
+                        <tr class="aluno">
+                            <td class="aluno-nome">Lindónia</td>
+                            <td class="aluno-n1">6.5</td>
+                            <td class="aluno-n2">8.5</td>
+                            <td class="aluno-n3">10</td>
+                            <td class="aluno-n4">7.5</td>
+                            <td class="aluno-m"></td>
+                        </tr>
+                        <tr class="aluno">
+                            <td class="aluno-nome">Creysson</td>
+                            <td class="aluno-n1">10</td>
+                            <td class="aluno-n2">10</td>
+                            <td class="aluno-n3">20</td>
+                            <td class="aluno-n4">20</td>
+                            <td class="aluno-m"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+        
+        <script>
+            (function(){
+                'use strict'
+                //Primeiro vamos criar uma variável para acessar a class aluno, que são as trs da tabela.
+                var trs = document.querySelectorAll('.js-tabela tbody .aluno');
+
+                //depois iremos criar um loop, para acessar cada uma das trs.
+                var x = 0;
+                while(trs[x]){
+                    //atribui valor das trs e sua indice[x] a outra variável, que receberá um valor diferente a cada volta do loop 
+                    var linhaAluno = trs[x];
+                    //variável tds será responsável por receber o valor de linhaAluno selecionando o td referente a volta do loop
+                    var tds = linhaAluno.querySelectorAll('td');
+                    //já as notas, atribuiremos uma função, passando por parâmetro a variável tds que veremos abaixo.
+                    var notas = recuperarNumerosDeColunas(tds);
+                    //variável média vai chamar a função do js externo calcularMedia, passando dois elementos por parâmetro(this, var notas)
+                    var media = calcularMedia.apply(this, notas);
+
+                    //linha aluno irá selecionar a class das médias e mudar o textContent para o valor que estará no loop dentro da var media
+                    linhaAluno.querySelector('.aluno-m').textContent = media;
+                    //incremento para o loop
+                    x++;
+                };
+
+                //Função convocada na var notas, acima. com parâmetro tds
+                function recuperarNumerosDeColunas(tds){
+                    //criando var x para iniciar um loop + uma var arr vazia
+                    var x = 0;
+                    var arr = [];
+                    //loop responsável por verificar cada uma das tds dentro da tr
+                    while(tds[x]){
+                        //se as tds tiverem valor numérico && forem diferente de strings a condição será executada
+                        if(!isNaN(tds[x].textContent) && tds[x].textContent !== ''){
+                            //var arr receberá um array, sendo ele o número dentro das tds(já fazendo conversão para números)
+                            arr.push(parseFloat(tds[x].textContent));
+                        };
+                        //incremento de loop da função
+                        x++;
+                    };
+                    //retornando valor da var arr
+                    return arr;
+                };
+            })()
+        </script>
+    </body>
+</html>
