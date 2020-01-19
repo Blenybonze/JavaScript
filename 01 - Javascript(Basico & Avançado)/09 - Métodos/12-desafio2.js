@@ -1,0 +1,1 @@
+/*Selecionar todos os parágrafos da página e adicionar uma classe de destaque no parágrafo que contém a palavra Javascript */
