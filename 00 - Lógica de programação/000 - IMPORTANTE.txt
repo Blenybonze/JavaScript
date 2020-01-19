@@ -1,2 +1,2 @@
 Estarei upando os Arquivos em .JS
-Quando você for aplicar, crie um exemplo base de HTML, após feito isto, basta copiar e colar o texto dos meus arquivos .js dentro do <script> do seu HTML.
+Quando você for aplicar, crie um exemplo base de HTML, após feito isto, basta copiar e colar o texto dos meus arquivos .js dentro do <script> do seu HTML
