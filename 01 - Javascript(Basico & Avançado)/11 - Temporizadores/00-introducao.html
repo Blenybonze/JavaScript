@@ -20,11 +20,8 @@
                     clearInterval(intervalo);
                 }
             }
-
-
             //executa uma função anonima ou não no primeiro parametro e no segundo parametro adiciona-se o tempo em milisegundos.
             var timeout = setTimeout(somaUm, /*segundo parametro = 1 segundo*/1000);
-
 
             //cria loop de tempo em tempo repetindo, neste caso, uma soma
             var intervalo = setInterval(somaUm, 2000);
@@ -37,9 +34,7 @@
                     str += 'i: '+ i + ' -- ';
                     d.textContent += str;
                 }
-
             },3000)
-
         </script>
     </body> 
 </html>
