@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="bleny bonze">
+        <title>Javascript</title>
+    </head>
+    <body>
+        <h1>Javascript</h1>
+        
+        <div class="relogio">
+            
+        </div>
+        
+        <script>
+            (function(){
+                var $relogio = document.querySelector('.relogio');
+
+                function getHour(){
+                    var data = new Date();
+                    var h = formata(data.getHours());
+                    var m = formata(data.getMinutes());
+                    var s = formata(data.setSeconds());
+
+                    return h + ':' + m + ':' + s;
+
+                    //colocando 2 digitos em números menores que 10
+                    //porém com função é melhor
+                    // h = h < 10 ? '0'+h : h;
+                    // m = m < 10 ? '0'+m : m;
+                    // s = s < 10 ? '0'+s : s;
+                }
+                function formata(t){
+                    return t < 10 ? '0'+t : t;
+                }
+
+                function mostraRelogio(atual){
+                    $relogio.textContent = atual;
+                }
+
+                mostraRelogio(getHour());
+
+                setInterval(function(){
+
+                },1000)
+
+            })()
+        </script>
+    </body> 
+</html>
