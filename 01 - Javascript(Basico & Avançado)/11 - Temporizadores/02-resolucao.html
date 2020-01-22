@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="bleny bonze">
+        <title>Javascript</title>
+
+        <style>
+            .banner{
+                position: absolute;
+                padding: 5px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                box-shadow: 0 0 0 1000px rgba(0,0,0,.8);
+                display: none;
+            }   
+
+            .banner__close{
+                position: absolute;
+                top: 5px;
+                right: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Javascript</h1>
+        
+        <div class="banner">
+            <h2>Banner Irritante</h2>
+            <button class="banner__close">X</button>
+            
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a ty</p>
+            
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a ty</p>
+            
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a ty</p>
+        </div>
+        
+        <script>
+            (function(){
+                var $banner = document.querySelector('.banner');
+                var $bannerBtn = document.querySelector('.banner__close');
+
+                $bannerBtn.addEventListener('click',escondeBanner);
+
+                var intervaloEsconde = null;
+
+                function mostraBanner(){
+                    $banner.style.display = 'block';
+
+                    intervaloEsconde = setTimeout(escondeBanner, 3000);
+                }
+
+                function escondeBanner(){
+                    $bannerBtn.removeEventListener('click', escondeBanner);
+                    $banner.parentNode.removeChild($banner);
+
+                    clearTimeout(intervaloEsconde);
+                }
+                setTimeout(mostraBanner, 3000);
+            })()
+        </script>
+    </body> 
+</html>
