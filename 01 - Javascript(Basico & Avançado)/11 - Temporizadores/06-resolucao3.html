@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+      <meta charset="utf-8">
+      <meta name="author" content="bleny bonze">
+      <title>Javascript</title>
+    </head>
+    <body>
+      <h1>Javascript</h1>
+        
+      <input type="text" id="cronometro";>
+      <button id="iniciar">Iniciar</button>
+      <button id="pausar">Pausar</button>
+      <button id="parar">Parar</button>
+         
+      <script>
+        (function(){
+          var $cronometro = document.querySelector('#cronometro');
+          var $iniciar = document.querySelector('#iniciar');
+          var $pausar = document.querySelector('#pausar');
+          var $parar = document.querySelector('#parar');
+
+          $iniciar.addEventListener('click', iniciar);
+          $pausar.addEventListener('click', pausar);
+          $parar.addEventListener('click', parar);
+
+          var msClickIniciar = 0;
+
+          function iniciar(){
+            msClickIniciar = Date.now();
+            iniciarCronometro();
+          }
+
+          function iniciarCronometro(){
+            setInterval(function(){
+              var msAgora = Date.now();
+              var diferenca = msAgora - msClickIniciar;
+              $cronometro.value = formataMs(diferenca);
+            },100)
+          }
+
+          function formataMs(ms){
+            //ms 900 => 900
+            //ms 1500 => 1:500
+            //ms 59000 => 59:000
+            //ms 61500 => 1:1:500
+            if(ms < 1000){
+              return ms;
+            } 
+            else if(ms < 60000){
+              var s = ms/1000;
+              s = parseInt(s);
+              var c = ms - (s * 1000);
+              return s + ':' + c;
+            }
+            else{
+              var m = ms / (60000);
+              m = parseInt(m);
+              var s = ms / 1000 - (m * 60);
+              s = parseInt(s);
+              var c = ms - (s*1000) - (m * 60 * 1000);
+              return m + ':' + s + ':' + c;
+            }
+          }
+
+          function pausar(){
+
+          }
+
+          function parar(){
+
+          }
+
+
+
+
+
+
+
+        })();
+
+
+      </script>
+    </body>
+</html>
