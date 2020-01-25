@@ -8,7 +8,7 @@ Deixarei  disponível aqui minha trajetória e evolução com a linguagem de pro
   Nele foi abordado assuntos sobre HTML(Básico ao Avançado), CSS(Básico ao Intermediário) e Javasccript(Básico).
     
 - Curso Javascript Ninja - 42,5 Horas 
-  -Professor Fernando Daciuk
+  - Professor Fernando Daciuk
   Este curso abordará tudo sobre JS, do básico ao avançado.
   Estarei documentando aqui a minha jornada
     
