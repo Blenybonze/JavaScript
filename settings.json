@@ -1,5 +1,7 @@
 #Configurando o VSCode do zero!
-### Pluguins
+
+
+##Pluguins
 - Dracrula Theme;
 - Color Highlight;
 - DotENV;
@@ -15,15 +17,10 @@
 - Rocketseat ReactJS;
 
 
-
-
-
-
 ## Configuração do JSON
 - No Windows(Ctrl + Shift + P);
 - Digite: JSON e clique em 'Preferencs: Open Settings (JSON)';
 - Copie as configurações abaixo e se preferir, mude o que quiser mudar.
-
 
 {
   // Define o tema do VSCode
