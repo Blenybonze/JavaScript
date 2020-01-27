@@ -1,3 +1,30 @@
+# Configurando o VSCode do zero!
+### Pluguins
+- Dracrula Theme;
+- Color Highlight;
+- DotENV;
+- EditorConfig for VS Code;
+- ESLint;
+- GitLens;
+- GraphQL;
+- Live Server;
+- Live Share;
+- Material Icon Theme;
+- vscode-styled-components;
+- Rocketseat React Native;
+- Rocketseat ReactJS;
+
+
+
+
+
+
+## Configuração do JSON
+- No Windows(Ctrl + Shift + P);
+- Digite: JSON e clique em 'Preferencs: Open Settings (JSON)';
+- Copie as configurações abaixo e se preferir, mude o que quiser mudar.
+
+
 {
   // Define o tema do VSCode
   "workbench.colorTheme": "Dracula",
