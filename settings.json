@@ -29,6 +29,8 @@
   // Configura tamanho e família da fonte
   "editor.fontSize": 13,
   "editor.lineHeight": 20,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
 
   // Aplica linhas verticais para lembrar de quebrar linha em códigos muito grandes
   "editor.rulers": [80, 120],
