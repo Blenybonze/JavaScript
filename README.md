@@ -13,6 +13,6 @@ Deixarei  disponível aqui minha trajetória e evolução com a linguagem de pro
   - Professor Fernando Daciuk
     
     Este curso abordará tudo sobre JS, do básico ao avançado.
-    Estarei documentando aqui a minha jornada
+    Estarei documentando aqui a minha jornada com a linguagem
     
 
