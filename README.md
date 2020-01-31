@@ -8,6 +8,7 @@ Esta pasta conterá assuntos de cursos variados que estarei estudando, incluindo
   - Professor Daniel Tapias Morales(SerFrontend Cursos)
   
       Nele foi abordado assuntos sobre HTML(Básico ao Avançado), CSS(Básico ao Intermediário) e Javasccript(Básico).
+      OBS.: A parte de HTML e CSS está no repositório HTML-CSS-lab
 
     
 - Curso Javascript Ninja - 42,5 Horas 
