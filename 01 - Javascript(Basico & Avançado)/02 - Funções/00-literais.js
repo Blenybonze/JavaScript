@@ -15,4 +15,4 @@
     var teste = function(str){ //estamos criando uma função anonima(sem nome). Mesmo que n faça sentido agora, há a possibilidade de criar-la sem nome / também atribui um parâmetro str na mesma
         console.log('teste',str);//concatenei o parametro aqui
     }
-    teste('olá'); //chamei o parametro aqui.
+    teste('olá'); //chamei o parametro aqui..
