@@ -1,5 +1,3 @@
-var DevFront = new Pessoa("adriano","souza")
-
 // Objeto com função construtora
 function Pessoa(nome, sobrenome) {
   this.nome = nome;
