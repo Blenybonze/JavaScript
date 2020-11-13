@@ -1,2 +1,0 @@
-Aqui colocarei assuntos variados de JS que estou aprendendo e estudando constantemente
-Desde os assuntos mais básicos até assuntos sobre orientação a Objetos e ES6
