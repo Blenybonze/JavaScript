@@ -1,20 +1,15 @@
-// Objeto com função construtora
-function Pessoa(nome, sobrenome) {
-  this.nome = nome;
-  this.sobrenome = sobrenome;
-  this.falar = function ( ) {
-      return ("Meu nome é " + this.nome + " " + this.sobrenome);
-  }
- }
- 
- 
- // Criando um objeto a partir de uma função construtora
- var funcionario = new Pessoa("Maria", "Peixoto");
- 
- // Acessando a propriedade nome e o método falar
- funcionario.nome;
- funcionario.falar();
+// função que retorna o nome do jogo apenas com o nome da criadora
+function Jogo(nome, criadora){
+  const _nome = nome;
+  const _criadora = criadora;
 
- // chamando a função
- console.log(funcionario.falar());
- 
+  //Criando um método que vai juntar o nome de ambos
+  this.nomeJogo = function(){
+    return(_nome+" criado por "+_criadora);
+  }
+}
+//Registrando primeiro game
+var jogo1 = new Jogo("CyberPunk2077","CDProjectRed");
+
+//Impriimindo...
+console.log(jogo1.nomeJogo());
