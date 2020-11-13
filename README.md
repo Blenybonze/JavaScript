@@ -10,15 +10,3 @@ Esta pasta conterá assuntos de cursos variados que estarei estudando, incluindo
       Nele foi abordado assuntos sobre HTML(Básico ao Avançado), CSS(Básico ao Intermediário) e Javasccript(Básico).
       OBS.: A parte de HTML e CSS está no repositório HTML-CSS-lab
       
-- Curso grátis de Javascript do youtube do canal Curso em vídeo
-  - Professor Gustavo Guanabara
-      
-      Muito didático, porém conteúdo para iniciantes(O meu caso xD)
-    
-- Curso Javascript Ninja - 42,5 Horas 
-  - Professor Fernando Daciuk
-    
-    Este curso abordará tudo sobre JS, do básico ao avançado.
-    Estarei documentando aqui a minha jornada com a linguagem
-    
-
