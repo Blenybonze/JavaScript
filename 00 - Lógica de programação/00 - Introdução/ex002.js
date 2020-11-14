@@ -1,3 +1,0 @@
-//atribuindo valor do prompt a uma variavel
-var nome = prompt('Qual é o seu nome?');//Vai perguntar o nome ...
-window.alert('É um grande prazer em te conhecer '+nome)//Concatenação

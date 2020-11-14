@@ -1,14 +1,15 @@
-// criando objetos literais, não precisam de uma função existente
-// Indicado utilizar quando não for necessário a reutilização do código
+// função que retorna o nome do jogo apenas com o nome da criadora
+function Jogo(nome, criadora){
+  const _nome = nome;
+  const _criadora = criadora;
 
-var filmes = {
-  nome: "Avatar",
-  diretor: "James Cameron",
-  ano: "2009",
-  exibirInfo: function(){
-    return(this.nome+" criado por "+this.diretor+" no ano de "+this.ano);
+  //Criando um método que vai juntar o nome de ambos
+  this.nomeJogo = function(){
+    return(_nome+" criado por "+_criadora);
   }
 }
+//Registrando primeiro game
+var jogo1 = new Jogo("CyberPunk2077","CDProjectRed");
 
-//imprimindo...
-console.log(filmes.exibirInfo());
+//Impriimindo...
+console.log(jogo1.nomeJogo());
