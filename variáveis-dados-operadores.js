@@ -1,5 +1,5 @@
 // função que retorna o nome do jogo apenas com o nome da criadora
-function Jogo(nome, criadora){
+function Jogo(nome, criadora) {
   const _nome = nome;
   const _criadora = criadora;
 
