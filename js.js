@@ -1,11 +1,34 @@
-const nome = "José";
-const tipoUsuario = nome == "José" ? 'ADM' : "Comum";
+function verificaEstacao(mes) {
+    let retorno = "";
 
-if
- ( tipoUsuario == 'ADM' ) {
-  console.log( "Acesso liberado" );
-} 
-else
- {
-  console.log( "Acesso bloqueado" );
+    
+switch(mes)
+{
+
+  case 'Janeiro':
+  case 'Fevereiro':
+  case 'Março':
+    retorno = 'Verão!';
+    break
+  case 'Abril':
+  case 'Maio':
+  case 'Junho':
+    retorno = 'Outono!';
+    break
+  case 'Julho':
+  case 'Agosto':
+  case 'Setembro':
+    retorno = 'Inverno!';
+    break
+  case 'Outubro':
+  case 'Novembro':
+  case 'Dezembro':
+    retorno = 'Primavera!';
 }
+
+    
+  return retorno;
+}
+
+const mes = 'Maio'
+console.log(verificaEstacao(mes));
