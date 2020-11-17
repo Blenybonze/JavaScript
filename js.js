@@ -1,27 +1,7 @@
-// checagem da estação com o Switch
+const minimoDeJogadores = 2;
+const iniciarJogo = minimoDeJogadores >= 2 && true;
 
-let mes = "maio";
+const msgInicial = "Iniciando o jogo";
+const msgErro = "Você não consegue jogar sozinho";
 
-switch(mes){
-  case 'janeiro':
-  case 'fevereiro':
-  case 'março':
-    console.log('Verão!')
-    break;
-  case 'abril':
-  case 'maio':  
-  case 'junho':  
-    console.log('Outono!')
-    break;
-  case 'julho':
-  case 'agosto':
-  case 'setembro':
-    console.log('inverno!')
-    break;
-  case 'outubro': 
-  case 'novembro':
-  case 'dezembro':
-    console.log('Primavera!')
-}
-
-console.log()
+console.log(iniciarJogo?msgInicial:msgErro);
