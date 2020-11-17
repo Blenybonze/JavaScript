@@ -1,7 +1,11 @@
-const minimoDeJogadores = 2;
-const iniciarJogo = minimoDeJogadores >= 2 && true;
+const nome = "José";
+const tipoUsuario = nome == "José" ? 'ADM' : "Comum";
 
-const msgInicial = "Iniciando o jogo";
-const msgErro = "Você não consegue jogar sozinho";
-
-console.log(iniciarJogo?msgInicial:msgErro);
+if
+ ( tipoUsuario == 'ADM' ) {
+  console.log( "Acesso liberado" );
+} 
+else
+ {
+  console.log( "Acesso bloqueado" );
+}
