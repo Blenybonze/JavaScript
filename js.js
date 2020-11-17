@@ -1,8 +1,27 @@
-let usuario = "Manoelly"
-let senha = '5648'
+// checagem da estação com o Switch
 
-if(usuario === "Manoelly" && senha == "5648") mensagem = "Autenticado"
-else mensagem = "Usuário e/ou senha inválido"
+let mes = "maio";
 
+switch(mes){
+  case 'janeiro':
+  case 'fevereiro':
+  case 'março':
+    console.log('Verão!')
+    break;
+  case 'abril':
+  case 'maio':  
+  case 'junho':  
+    console.log('Outono!')
+    break;
+  case 'julho':
+  case 'agosto':
+  case 'setembro':
+    console.log('inverno!')
+    break;
+  case 'outubro': 
+  case 'novembro':
+  case 'dezembro':
+    console.log('Primavera!')
+}
 
-console.log(mensagem)
+console.log()
