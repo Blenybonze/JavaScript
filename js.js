@@ -1,34 +1,10 @@
-function verificaEstacao(mes) {
-    let retorno = "";
+//comprando chocolate, ou não
+function comprarChocolate(nome,dinheiro){
+let Nome = nome;
+let Dinheiro = dinheiro;
+let situacao = '';
 
-    
-switch(mes)
-{
-
-  case 'Janeiro':
-  case 'Fevereiro':
-  case 'Março':
-    retorno = 'Verão!';
-    break
-  case 'Abril':
-  case 'Maio':
-  case 'Junho':
-    retorno = 'Outono!';
-    break
-  case 'Julho':
-  case 'Agosto':
-  case 'Setembro':
-    retorno = 'Inverno!';
-    break
-  case 'Outubro':
-  case 'Novembro':
-  case 'Dezembro':
-    retorno = 'Primavera!';
+console.log(Nome+' vai no supermercado com R$'+Dinheiro.toFixed(2));
+situacao = Dinheiro > 50 ? "compra chocolate" : "não compra chocolate";
+return console.log(situacao);
 }
-
-    
-  return retorno;
-}
-
-const mes = 'Maio'
-console.log(verificaEstacao(mes));
