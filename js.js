@@ -1,7 +1,15 @@
-let contador = 1;
+// Verificando valores dentro de um Array
 
-while(contador<=5){
-  console.log("contagem n°"+contador);
+const cores= [
+  "verde",
+  "amarelo",
+  "azul",
+  "branco"
+];
 
-  contador++;
+let index = 0;
+
+while(index < cores.length){
+  console.log('A cor é '+cores[index]);
+  index++;
 }
