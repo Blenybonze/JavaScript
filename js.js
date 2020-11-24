@@ -1,24 +1,24 @@
-//Somando valores dos carros da concecionária
+//Tirando a média de nota da turma A
 
-const carros = [
-  { id: 1, modelo: 'Corsa', marca: 'Chevrolet', preco: 18000 },
-  { id: 2, modelo: 'Punto', marca: 'Fiat', preco: 12000 },
-  { id: 3, modelo: 'Gol', marca: 'Volkswagen', preco: 14000 },
-  { id: 4, modelo: 'Saveiro', marca: 'Volkswagen', preco: 20000 },
-  { id: 5, modelo: 'Uno', marca: 'Fiat', preco: 12000 }
-];
+const turmaA = [
+  { aluno: 'João', nota: 10},
+  { aluno: 'Ana', nota: 8},
+  { aluno: 'Fernando', nota: 9},
+  { aluno: 'Bia', nota: 10},
+  { aluno: 'Manoelly', nota: 10},
+]
 
-//Variáveis utilizadas no exercício
 let index = 0;
-let valorFinal =0;
+let SomaDasNotas = 0;
+let totalAlunos = turmaA.length;
 
-//Estrutura de repetição
-while(index<carros.length){
-  valorFinal += carros[index].preco;
-  console.log(valorFinal)
+do{
+  console.log('a nota do aluno '+turmaA[index].aluno+' é: '+turmaA[index].nota);
+  SomaDasNotas += turmaA[index].nota;
+
   index++;
-}
+}while(index<turmaA.length)
 
-//Imprimindo o valor final dos carros da concecionária e formatando o valor de valorFinal para BRL
-console.log('O valor de todos os carros é de: '+valorFinal.toLocaleString('pt-br',{style:'currency',currency:'BRL'}))
+let media = SomaDasNotas / totalAlunos;
 
+console.log(media);
