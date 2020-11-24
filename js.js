@@ -4,7 +4,9 @@ const cores= [
   "verde",
   "amarelo",
   "azul",
-  "branco"
+  "branco",
+  "roxo",
+  "rosa"
 ];
 
 let index = 0;
