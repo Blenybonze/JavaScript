@@ -1,25 +1,24 @@
-//Somando os valores dentro de um Array[]
+//Somando valores dos carros da concecionária
 
-const produtos = [
-  {descricao:"Resma Oficio", valor:11.50, quantidade:10},
-  {descricao:"lapis preto", valor:0.50, quantidade:3},
-  {descricao:"Paleta Plástica", valor:1.20, quantidade:4},
-  {descricao:"Caneta", valor:2, quantidade:5}
+const carros = [
+  { id: 1, modelo: 'Corsa', marca: 'Chevrolet', preco: 18000 },
+  { id: 2, modelo: 'Punto', marca: 'Fiat', preco: 12000 },
+  { id: 3, modelo: 'Gol', marca: 'Volkswagen', preco: 14000 },
+  { id: 4, modelo: 'Saveiro', marca: 'Volkswagen', preco: 20000 },
+  { id: 5, modelo: 'Uno', marca: 'Fiat', preco: 12000 }
 ];
 
-
-let total = 0;
-let totalProduto=0;
+//Variáveis utilizadas no exercício
 let index = 0;
+let valorFinal =0;
 
-while(index<produtos.length){
-  const{descricao,valor,quantidade} = produtos[index];
-
-  totalProduto = valor * quantidade;
-  total += totalProduto;
+//Estrutura de repetição
+while(index<carros.length){
+  valorFinal += carros[index].preco;
+  console.log(valorFinal)
   index++;
-  
-  console.log("Total de "+descricao+" é "+totalProduto);
 }
 
-console.log("O Total geral é: R$"+total.toFixed(2));
+//Imprimindo o valor final dos carros da concecionária e formatando o valor de valorFinal para BRL
+console.log('O valor de todos os carros é de: '+valorFinal.toLocaleString('pt-br',{style:'currency',currency:'BRL'}))
+
