@@ -1,16 +1,34 @@
-// Aprendendo a usar o new Date()
+// aprendendo os diferentes modos de usar o new Date()
 
-//Criando sem parâmetro
-let data = new Date();
+const hoje = new Date();
 
-//Com parâmetro
-let exemplo1 = new Date("2020-11-25");
-let exemplo2 = new Date("2020-11-25 18:14:00");
+//Imprimindo uma string com a data e hora local
+console.log('local: '+hoje.toLocaleString());
 
-//Simplificando o parâmetro colocando numeros com virgula
-let exemplo3 = new Date(2020,11,24,17,15,00)
+//Imprimindo uma string com a data armazenada
+console.log('armazenada: '+hoje.toString());
 
-console.log(data)
-console.log(exemplo1)
-console.log(exemplo2)
-console.log(exemplo3)
+//Imprimindo uma string com a data universal (UTC)
+console.log('universal: '+hoje.toUTCString());
+
+//imprimindo Timestamp
+console.log('timestamp(milissegundos): '+hoje.valueOf());
+
+const dataAtual = new Date();
+const dataPostagem = new Date('2020-11-11T00:00')
+console.log('objeto postado dia '+dataPostagem.toLocaleString()+' e hoje é dia: '+dataAtual.toLocaleString())
+
+//Pegando o timestamp das datas para converter mais abaixo
+const timeAtual = dataAtual.getTime();
+const timePostagem = dataPostagem.getTime();
+
+//Verificando a diferença em milissegundos
+const diferenca = timeAtual - timePostagem;
+
+//convertendo o timestemp em horas
+const segundos = diferenca / 1000;
+const minutos = segundos / 60;
+const horas = minutos / 60;
+
+//Exibindo a diferença
+console.log(horas;
