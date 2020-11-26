@@ -1,5 +1,12 @@
-const times = ["Flamengo", "Vasco", "Fluminense"];
+const produtos = [
+  {id: 20, tipo: "Filme"},
+  {id: 10, tipo: "Jogo"},
+  {id: 8, tipo: "Música"},
+];
 
-for(const time of times){
-  console.log(time);
+for(const produto of produtos)
+ {
+  if ( produto.id === 10 || produto.id === 8 ) {
+    console.log(produto.tipo);
+  }
 }
