@@ -1,34 +1,64 @@
-// aprendendo os diferentes modos de usar o new Date()
+//metodos do objeto new Date()
 
-const hoje = new Date();
+const data = new Date();
+console.log('o padrão a ser imprimido é:  '+data)
 
-//Imprimindo uma string com a data e hora local
-console.log('local: '+hoje.toLocaleString());
+console.log()
+console.log('Getters do date')
+console.log()
 
-//Imprimindo uma string com a data armazenada
-console.log('armazenada: '+hoje.toString());
+//imprimir apenas o ano da data
+console.log('apenas o ano:  '+data.getFullYear());
 
-//Imprimindo uma string com a data universal (UTC)
-console.log('universal: '+hoje.toUTCString());
+//Imprimir apenas o mês de 0 a 11(indicado somar +1 para não confundir)
+console.log('apenas o mês:  ',data.getMonth()+1);
 
-//imprimindo Timestamp
-console.log('timestamp(milissegundos): '+hoje.valueOf());
+//Imprimir apenas o dia do mês
+console.log('apenas o dia do mês:  '+data.getDate());
 
-const dataAtual = new Date();
-const dataPostagem = new Date('2020-11-11T00:00')
-console.log('objeto postado dia '+dataPostagem.toLocaleString()+' e hoje é dia: '+dataAtual.toLocaleString())
+//Imprimir apenas a hora da data
+console.log('apenas a hora da data:  '+data.getHours());
 
-//Pegando o timestamp das datas para converter mais abaixo
-const timeAtual = dataAtual.getTime();
-const timePostagem = dataPostagem.getTime();
+//Imprimir apenas os minutos da data
+console.log('apenas os minutos da data:  '+data.getMinutes());
 
-//Verificando a diferença em milissegundos
-const diferenca = timeAtual - timePostagem;
+//Imprimir apenas os segundos da data
+console.log('apenas os segundos da data:  '+data.getSeconds());
 
-//convertendo o timestemp em horas
-const segundos = diferenca / 1000;
-const minutos = segundos / 60;
-const horas = minutos / 60;
+//Imprimir apenas a hora da data
+console.log('apenas a hora da data:  '+data.getHours());
 
-//Exibindo a diferença
-console.log(horas;
+//Imprimir apenas os milissegundos da data
+console.log('apenas os milissegundos da data:  '+data.getMilliseconds());
+
+//Imprimir dia da semana de 0 a 6 (indicado somar +1 para não confundir)
+console.log('apenas o dia da semana de 0(domingo) a 6(sabado):  ',data.getDay()+1);
+
+console.log()
+console.log()
+console.log('Getters de conversão para String')
+console.log()
+
+//Este objeto também tem outros métodos chamados Getters de conversão
+//Utilizado para imprimir a data como string
+
+//Imprimir a data como string
+console.log("imprimindo a data como string: ",data.toDateString());
+
+//retorna uma string com a data local apenas
+console.log('imprimindo a data local como string: ', data.toLocaleDateString());
+
+//retorna uma string com o tempo
+console.log('imprimindo uma string com o tempo: ', data.toTimeString());
+
+//retorna uma string com o tempo local
+console.log('imprimindo uma string com o tempo local',data.toLocaleTimeString());
+
+//Retorna uma string com um formato universal(ISO 8601)
+//o horário retornado será sempre com o fuso horário 0, ou seja:
+console.log('Retorna uma string com um formato universal: ',data.toISOString());
+
+//Retorna uma string apenas com a data e o tempo
+console.log('string apenas com a data e o tempo:',data.toLocaleString());
+
+
