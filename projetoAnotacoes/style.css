@@ -3,11 +3,9 @@
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 a{
   text-decoration: none;
-}
-a.links{
-  display: none;
 }
 
 .content{
@@ -15,6 +13,7 @@ a.links{
   width: 400px;
   margin: 20px auto;
   position: relative;
+  margin: 10% auto;
   border: 1px solid #3331322c;
   border-radius: 3px;
 }
@@ -28,9 +27,11 @@ h1{
   width: 75%;
   margin: 25px  auto;
 }
+
 .nome_cad,.email_cad,.senha_cad,.email_login,.senha_login{
   margin-top: 13px;
 }
+
 #senha_login:hover,#email_login:hover,#nome_cad:hover,#email_cad:hover,#senha_cad:hover{
   border: 0.5px solid#ff9d00e7;
 }
@@ -49,6 +50,7 @@ h1{
 .btn_cad:hover,.btn_login:hover{
   font-size: 16px;
   background-color: #ff9d00;
+  box-shadow: 0.5px 0.5px 1px #333132;
   transition: linear 0.1s;
 }
 .btn-1{
