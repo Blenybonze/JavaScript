@@ -11,11 +11,11 @@ a.links{
 }
 
 .content{
-  background-color: rgba(238, 238, 238, 0.342);
-  width: 500px;
-  margin: 0px auto;
+  background-color: rgba(238, 238, 238, 0.205);
+  width: 400px;
+  margin: 20px auto;
   position: relative;
-  border: 1px solid #33313270;
+  border: 1px solid #3331322c;
   border-radius: 3px;
 }
 
@@ -26,25 +26,44 @@ h1{
   text-align: center;
   padding: ;
   border-bottom: 1px solid #faa61b;
-  width: 65%;
+  width: 75%;
   margin: 25px  auto;
 }
-.nome_cad,.email_cad,.btn_cad,.senha_cad{
-  margin-top: 18px;
-  
+.nome_cad,.email_cad,.senha_cad,.email_login,.senha_login{
+  margin-top: 13px;
 }
-.btn_cad{
+#senha_login:hover,#email_login:hover,#nome_cad:hover,#email_cad:hover,#senha_cad:hover{
+  border: 0.5px solid#ff9d00e7;
+}
+
+.btn_cad,.btn_login{
   background-color: #faa61b;
   cursor: pointer;
   border-radius: 3px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  box-shadow: 0.3px 0.3px 2px white;
+}
+.btn_cad:hover,.btn_login:hover{
+  font-size: 16px;
+  background-color: #ff9d00;
+  transition: linear 0.1s;
+}
+.btn-1{
+  margin-top: 30px;
+}
+.btn-2{
+  margin-bottom: 20px;
+  width: 83%;
 }
 
 input,label{
   border: none;
   text-decoration: none;
-  width: 80%;
+  width: 85%;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -53,10 +72,11 @@ input{
   height: 30px;
   border-radius: 3px;
   border: 0.5px solid#faa41b85;
+  padding: 0 5px;
 }
 label{
   position: relative;
-  display: block;
+  display: block ;
   color: #333132;
 }
 

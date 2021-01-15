@@ -14,28 +14,22 @@
           <h1 class='titulo'>Login</h1>
           
           
-          <div class="email">
-            <label for="email_login">Email</label>
+          <div class="email_login">
+            <label for="email_login">E-mail</label>
               <input id="email_login"type="email" name="email_login" placeholder="user@exemplo.com"required>
           </div>
 
-          <div class="senha">
+          <div class="senha_login">
             <label for="senha_login">Senha</label>
               <input id="senha_login" type="password" name="senha_login" placeholder="Sua senha"required>
           </div>
 
+          
           <div>
-            <input id="manter_logado" name="manter_logado" type="checkbox" checked>
-            <label for="manter_logado">Manter-me logado(a)</label>
+            <input class="btn_login btn-1" type="submit" name="logar" value="Logar">
           </div>
-
           <div>
-            <input type="submit" name="logar" value="logar">
-          </div>
-
-          <div class="link">
-            Ainda não é cadastrado?
-            <a href="cadastro.html">Cadastrar</a>
+            <a href="cadastro.html"><input class="btn_cad btn-2" type="button" name="ir_cad" value="Não Possuo Conta"></a>
           </div>
         </form>
       </div>
