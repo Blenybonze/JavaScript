@@ -3,40 +3,44 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anotação de tarefas</title>
+    <title>Login</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body> 
+    <!--FORMULÁRIO DE LOGIN-->
+    <div class="content">
+      <div id="login">
+        <form method="POST" action="">
+          <h1 class='titulo'>Login</h1>
+          
+          
+          <div class="email">
+            <label for="email_login">Email</label>
+              <input id="email_login"type="email" name="email_login" placeholder="user@exemplo.com"required>
+          </div>
 
-    <div class="login">
-      <form method="GET" action="">
-        <h1 class='titulo'>Login</h1>
-        <div class="email">
-          <label>Email<br>
-            <input type="email" class="campoForm" name="email" placeholder="user@exemplo.com"required>
-          </label>
-        </div>
-        <div class="senha">
-          <label>Senha<br>
-            <input type="password" class="campoForm" name="senha" placeholder="*****"required>
-          </label>
-        </div>
-        
-        <div>
-          <label>
-            <input type="checkbox" checked>
-          Manter-me logado(a)</label>
-        </div>
-        <div>
-          <input type="submit" name="logar" value="logar">
-        </div>
-        <div class="cadastrar">
-          <label>Ainda não possui uma conta?
-            <a href="cadastro.html"><input type="button" value="Cadastrar" name="cadastrar"></a>
-          </label>
-        </div>
-      </form>
+          <div class="senha">
+            <label for="senha_login">Senha</label>
+              <input id="senha_login" type="password" name="senha_login" placeholder="Sua senha"required>
+          </div>
+
+          <div>
+            <input id="manter_logado" name="manter_logado" type="checkbox" checked>
+            <label for="manter_logado">Manter-me logado(a)</label>
+          </div>
+
+          <div>
+            <input type="submit" name="logar" value="logar">
+          </div>
+
+          <div class="link">
+            Ainda não é cadastrado?
+            <a href="cadastro.html">Cadastrar</a>
+          </div>
+        </form>
+      </div>
     </div>
+    
 
     <script src="script.js"></script>
   </body>

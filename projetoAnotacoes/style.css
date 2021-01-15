@@ -1,33 +1,71 @@
-body{
+*{
+  margin: 0;
+  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color:rgb(219, 219, 219) ;
 }
-.campoForm{
-  width: 100%;
+a{
+  text-decoration: none;
+}
+a.links{
+  display: none;
 }
 
-.login{
+.content{
+  background-color: rgba(238, 238, 238, 0.342);
+  width: 500px;
+  margin: 0px auto;
+  position: relative;
+  border: 1px solid #33313270;
+  border-radius: 3px;
+}
+
+h1{
+  font-size: 43px;
+  color: #faa61b;
+  font-weight: bold;
+  text-align: center;
+  padding: ;
+  border-bottom: 1px solid #faa61b;
+  width: 65%;
+  margin: 25px  auto;
+}
+.nome_cad,.email_cad,.btn_cad,.senha_cad{
+  margin-top: 18px;
+  
+}
+.btn_cad{
+  background-color: #faa61b;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+input,label{
+  border: none;
+  text-decoration: none;
+  width: 80%;
+  margin: auto;
   display: flex;
   justify-content: center;
 }
-.titulo{
-  text-align: center;
-  border-bottom: 0.2px solid #faa61b;
-  color: #faa61b;
+input{
+  height: 30px;
+  border-radius: 3px;
+  border: 0.5px solid#faa41b85;
 }
-form{
-  padding: 20px;
-  border: 1px solid #333132;
-  background-color:rgba(255, 255, 255, 0.897)
-}
-.email,.senha{
-  margin: 15px auto;
-  width: auto;
+label{
+  position: relative;
+  display: block;
+  color: #333132;
 }
 
-Cartela de cores:
+
+
+
+
+
 #333132
 #c41610
 #faa61b
 #f7ec32
-

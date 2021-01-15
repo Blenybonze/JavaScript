@@ -3,32 +3,41 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anotação de tarefas</title>
+    <title>Cadastro</title>
     <link rel="stylesheet" href="style.css">
   </head>
-  <body> 
+  <body>
+  <!--FORMULÁRIO DE CADASTRO-->
+    <div class="content">
+      <div id="cadastro">
+        <form method="POST" action="">
+          <h1 class='titulo'>Cadastro</h1>
 
-    <div class="login">
-      <form method="GET" action="">
-        <h1 class='titulo'>Cadastro</h1>
-        <div>
-          <label>Email
-            <input type="email" name="email" placeholder="user@exemplo.com"required>
-          </label>
-        </div>
-        <div>
-          <label>Senha
-            <input type="password" name="senha" placeholder="*****"required>
-          </label>
-        </div>
-        
-        <div class="logar">
-          <label>Já possui uma conta?
-            <a href="login.html"><input type="button" value="logar" name="logar"></a>
-          </label>
-        </div>
-      </form>
-    </div>
+          <div class="nome_cad">
+            <label for="nome_cad">Seu nome</label>
+            <input id="nome_cad" type="text" name="nome_cad" placeholder="Joselino de cabra">
+          </div>
+
+          <div class="email_cad">
+            <label for="email_cad">Email</label>
+              <input id="email_cad"type="email" name="email_cad" placeholder="user@exemplo.com"required>
+          </div>
+
+          <div class="senha_cad">
+            <label for="senha_cad">Senha</label>
+              <input id="senha_cad" type="password" name="senha_cad" placeholder="123abc"required>
+          </div>
+
+          <div>
+            <input class="btn_cad" type="submit" name="cadastrar" value="Cadastrar">
+          </div>
+          <div>
+            <a href="login.html"><input class="btn_cad" type="url" name="cadastrar" value="Cadastrar"></a>
+          </div>
+        </form>
+      </div>
+    </div>  
+  
 
     <script src="script.js"></script>
   </body>
