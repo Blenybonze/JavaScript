@@ -11,7 +11,6 @@ a{
 .content{
   background-color: rgba(238, 238, 238, 0.205);
   width: 400px;
-  margin: 20px auto;
   position: relative;
   margin: 10% auto;
   border: 1px solid #3331322c;
@@ -36,7 +35,7 @@ h1{
   border: 0.5px solid#ff9d00e7;
 }
 
-.btn_cad,.btn_login{
+.btn_cad,.btn_login,.btnAdd,.btnCancelaAdd{
   background-color: #faa61b;
   cursor: pointer;
   border-radius: 3px;
@@ -47,7 +46,7 @@ h1{
   font-size: 15px;
   box-shadow: 0.3px 0.3px 2px white;
 }
-.btn_cad:hover,.btn_login:hover{
+.btn_cad:hover,.btn_login:hover,.btnAdd:hover,.btnCancelaAdd:hover{
   font-size: 16px;
   background-color: #ff9d00;
   box-shadow: 0.5px 0.5px 1px #333132;
@@ -79,4 +78,28 @@ label{
   position: relative;
   display: block ;
   color: #333132;
+}
+
+
+
+.container_lista{
+  margin: 20px auto;
+  border: solid 1px #333132 ;
+  width: 80%;
+}
+.btnAdd,.btnCancelaAdd{
+  width: 100px;
+  height: 20px;
+  box-shadow: none;
+  border: none;
+  margin-top: 2px;
+  box-sizing: border-box;
+}
+.campoAdd{
+  height: 20px;
+  width: 350px;
+  text-align: left;
+  justify-content: left;
+  display: inline;
+  box-sizing: border-box;
 }
