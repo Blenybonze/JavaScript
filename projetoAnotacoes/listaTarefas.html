@@ -5,44 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anotação de tarefas</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
   </head>
   <body> 
-    <nav>
-      <ul>
-        <li><a href="">Perfil</a></li>
-        <li><a href="">Sair</a></li>
-      </ul>
-    </nav>
-    <div>
-      <h1>Lista de tarefas facilita</h1>
-      <div class="container_lista">
-        <div class="addTarefa">
-          <input class="campoAdd" type="text">
-          <button class="btnAdd" name="adicionar" type="button">Adicionar</button>
-          <button class="btnCancelaAdd" name="cancelar" type="button">Cancelar</button>
+    
+    <div class="container">
+      <div class="cabecalho">
+        <div class="reset">
+          <i class="fas fa-sync-alt eft-btn" onclick="resetarTudo()" aria-hidden="true"></i>
         </div>
-        
-        <div>
-          <a class="btnSelecionar" href="#"><i class="fas fa-hand-pointer"></i></a>
-          <a class="btnAdicionar" href="#"><i class="fas fa-plus-square"></i></a>
-          <a class="btnConcluir" href="#"><i class="fas fa-check-square"></i></a>
-          <a class="btnDeletar" href="#"><i class="fas fa-trash-alt"></i></a>
-        </div>
-           
+        <div id="data">data exemplo</div>
       </div>
-        
 
-        
 
+      <div class="conteudo">
+        <ul id="lista">
+          <li class="item">
+            <i class="far fa-circle eft-btn" onclick="concluirTarefa()" aria-hidden="true"></i>
+            <p class="textoItem">Ir na padaria</p>
+            <i class="fas fa-trash-alt eft-btn" onclick="removerTarefa()" aria-hidden="true"></i>
+          </li>
+        </ul>
+        <div class="addItem">
+          <i class="fas fa-plus-circle eft-btn" onclick="adicionarTarefa()" aria-hidden="true"></i>
+          <input type="text" maxlength="20" id="addTarefa" placeholder="Adicionar tarefa">
+        </div>
+      </div>
+    </div>
       
       
-   
-
-    
-
-    
-
     <script src="script.js"></script>
   </body>
 </html>

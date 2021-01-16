@@ -81,25 +81,3 @@ label{
 }
 
 
-
-.container_lista{
-  margin: 20px auto;
-  border: solid 1px #333132 ;
-  width: 80%;
-}
-.btnAdd,.btnCancelaAdd{
-  width: 100px;
-  height: 20px;
-  box-shadow: none;
-  border: none;
-  margin-top: 2px;
-  box-sizing: border-box;
-}
-.campoAdd{
-  height: 20px;
-  width: 350px;
-  text-align: left;
-  justify-content: left;
-  display: inline;
-  box-sizing: border-box;
-}

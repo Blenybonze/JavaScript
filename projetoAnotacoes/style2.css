@@ -1,0 +1,92 @@
+*{
+  
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+.eft-btn{
+  cursor: pointer;
+}
+.container{
+  border: black 1px solid;
+  border-radius: 6px;
+  width: 400px;
+  height: 700px;
+  position: relative;
+  margin: auto;
+}
+.cabecalho{
+  width: 100%;
+  height: 200px;
+  background: url(img/nascerdosol.jpg)no-repeat center content-box;
+}
+.reset{
+  float: right;
+  display: block;
+  position: relative;
+  font-size: 30px;
+  margin: 10px;
+}
+#data{
+  position: relative;
+  top: 150px;
+  color: black;
+  display: block;
+  font-size: 30px;
+  margin: 0 10px;
+}
+#lista{
+  padding: 0;
+  margin: 0;
+}
+.item{
+  line-height: 41px;
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid black;
+  display: block;
+}
+.item i{
+  font-size: 20px;
+}
+.fa-circle{
+  text-align: left;
+  margin-left: 10px;
+}
+.fa-trash-alt{
+  line-height: 41px;
+  position: absolute;
+  right: 0;
+  margin-right: 10px;
+}
+.textoItem{
+  display: inline;
+  max-width: 80%;
+}
+
+.addItem{
+  border-top: solid 1px black;
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  left:0%;
+  bottom: 0%;
+  display: flex;
+  justify-content: start;
+}
+#addTarefa{
+  box-sizing: border-box;
+  border: none;
+  margin-left: 10px;
+  width: 100%;
+  font-size: 25px;
+}
+
+.addItem i{
+  font-size: 40px;
+  margin-left: 10px;
+  line-height: 50px;
+}
