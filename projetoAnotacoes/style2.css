@@ -1,8 +1,12 @@
+
 *{
-  
   font-family: Arial, Helvetica, sans-serif;
 }
-
+textarea:focus, input:focus, select:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+} 
 a{
   text-decoration: none;
 }
@@ -11,8 +15,8 @@ a{
   cursor: pointer;
 }
 .container{
-  border: black 1px solid;
-  border-radius: 6px;
+  border:#333132 1px solid;
+  border-radius: 10px 10px 4px 4px;
   width: 400px;
   height: 700px;
   position: relative;
@@ -20,20 +24,32 @@ a{
 }
 .cabecalho{
   width: 100%;
-  height: 200px;
-  background: url(img/nascerdosol.jpg)no-repeat center content-box;
+  height:200px;
+  border-radius: 10px 10px 0px 0px;
+  background-image: url('img/imagem1.jpg');
+  background-size: 100% 200%;
+  background-repeat: no-repeat;
+  position: relative;
 }
 .reset{
   float: right;
   display: block;
   position: relative;
   font-size: 30px;
+  color: #faa61b;
   margin: 10px;
+  transition: 0.2s;
+}
+.reset:hover{
+  transform:rotate(45deg);
+  color: #f7ec32;
+  transition: 0.2s;
 }
 #data{
   position: relative;
   top: 150px;
-  color: black;
+  color: white;
+  text-shadow: 2px 2px 2px #333132;
   display: block;
   font-size: 30px;
   margin: 0 10px;
@@ -46,29 +62,32 @@ a{
   line-height: 41px;
   width: 100%;
   height: 40px;
-  border-bottom: 1px solid black;
-  display: block;
-}
-.item i{
-  font-size: 20px;
+  border-bottom: 1px solid #333132;
+  display: flex;
+  justify-content: start;
 }
 .fa-circle{
+  line-height: 41px;
+  font-size: 30px;
   text-align: left;
   margin-left: 10px;
+  color: #f7ec32;
 }
 .fa-trash-alt{
+  font-size: 20px;
   line-height: 41px;
   position: absolute;
   right: 0;
   margin-right: 10px;
 }
 .textoItem{
-  display: inline;
+  display: block;
   max-width: 80%;
+  margin: 0;
+  margin-left:10px;
 }
-
 .addItem{
-  border-top: solid 1px black;
+  border-top: solid 1px #333132;
   height: 50px;
   width: 100%;
   position: absolute;
@@ -84,9 +103,31 @@ a{
   width: 100%;
   font-size: 25px;
 }
-
 .addItem i{
   font-size: 40px;
   margin-left: 10px;
   line-height: 50px;
+  color: #faa61b;
+  transition: 0.2s;
 }
+.addItem i:hover{
+  color: #f7ec32;
+  transition: 0.2s;
+}
+.btn-del{
+  transition: 0.2s;
+}
+.btn-del:hover{
+  color: #c41610;
+  transition: 0.2s;
+  transform: rotate(10deg);
+}
+
+
+/*Paleta de cores indicada*/
+/*
+#333132
+#c41610
+#faa61b
+#f7ec32
+*/
